@@ -1,0 +1,61 @@
+//
+//  PrefixHeader.pch
+//  topbar
+//
+//  Created by topbar on 2019/9/30.
+//  Copyright © 2019 guo feng zou. All rights reserved.
+//
+#import "MBProgressHUD.h"
+#import "CheckNet.h"
+#import "UITableView+EmptyTipLabel.h"
+#import "Login_PresentationController.h"//登陆弹窗动画效果
+#import "Login_ViewController.h"//弹窗内容
+#import <AudioToolbox/AudioToolbox.h>
+#define SOUNDID 1103 //音效表  https://blog.csdn.net/Morpheus_Dong/article/details/55050842
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define APIURL        @"http://api.topbar.cn/website/admin/"//API网站地址
+#define APIURL_USER   @"http://api.topbar.cn/website/admin/user_api.php"//用户登陆及注册调用
+#define APIURL_USDT   @"http://api.topbar.cn/website/admin/transaction_api.php"//币币交易调用接口
+
+
+
+//#define APIURL       @"http://192.168.14.107/website/admin/"//API网站地址
+//#define APIURL_USER  @"http://192.168.14.107/website/admin/user_api.php"//用户登陆及注册调用
+//#define APIURL_USDT       @"http://192.168.14.107/website/admin/transaction_api.php"//币币交易调用接口
+
+#define APIURL_HC  @"http://api.zb.live/"//ZB行情总数据请求
+#define APIURL_HC_Global @"https://fxhapi.feixiaohao.com/"//非小号全球数据
+
+#define APIURL_Websock  @"wss://api.zb.live/websocket"//Websock连接
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+#define ZhuTiColor RGB(76,16,198)
+#define ZhuTiColorAlpha(alpha) RGBA(76, 16, 198, alpha)
+
+// 判断是否是iPhone X
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 1000), [[UIScreen mainScreen] currentMode].size) : NO)
+// 状态栏高度
+#define STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
+// 导航栏高度
+#define NAVIGATION_BAR_HEIGHT (iPhoneX ? 88.f : 64.f)
+// tabBar高度
+#define TAB_BAR_HEIGHT (iPhoneX ? (49.f + 34.f) : 49.f)
+// home indicator
+#define HOME_INDICATOR_HEIGHT (iPhoneX ? 34.f : 0.f)
+ ////获取屏幕的Frame、宽度和高度
+#define SCREEN_FRAME ([UIScreen mainScreen].applicationFrame)
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+ 
+#define imageHight 200//资产顶部背景图高度
+
+
+
+#endif /* PrefixHeader_pch */
+
