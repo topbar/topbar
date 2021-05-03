@@ -1,4 +1,4 @@
-数字货币交易行情（包括会员，交易，行情，合约等）
+数字货币交易行情（包括会员，交易，行情，AI等）
 ![Simulator Screen Shot - iPhone Xʀ - 2021-05-03 at 16 53 12](https://user-images.githubusercontent.com/3946491/116860634-753ad980-ac34-11eb-9590-caab6474d017.png)
 ![Simulator Screen Shot - iPhone Xʀ - 2021-05-03 at 16 53 50](https://user-images.githubusercontent.com/3946491/116860643-779d3380-ac34-11eb-9f3b-3b3ef9a948c5.png)
 ![Simulator Screen Shot - iPhone Xʀ - 2021-05-03 at 16 54 11](https://user-images.githubusercontent.com/3946491/116860655-79ff8d80-ac34-11eb-9571-d04cfbcefdab.png)
